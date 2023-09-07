@@ -1,4 +1,4 @@
-# Environment
+# Environment Setup
 conda create -n surfpcc
 conda activate surfpcc
 conda install python==3.7
@@ -14,16 +14,16 @@ cd models/Chamfer3D
 python setup.py install
 
 # How to use
-## 生成训练数据
+## Generate dateset
 python prepare_shapenet.py
 
-## 训练
+## Training example
 python train.py --model SurPCC --bpp_lambda 0.001 --training_up_ratio 21
 
-## 测试
+## Testing example
 python test.py --model SurPCC --bpp_lambda 0.001 --training_up_ratio 21
 
-# 第三方库
+# Third Party
 ## Manifold
 https://github.com/hjwdzh/Manifold
 ## NeuralPoints
